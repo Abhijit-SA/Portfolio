@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta
+      charset="UTF-8"
+      name="description"
+      content="Portfolio of Abhijit S A, he codes for fun and is looking for a job as a Full-Stack Developer!"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abhijit S A</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="me" href="https://infosec.exchange/@abhijit" />
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap"
+      as="style"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--  /$$$$$$$                                    /$$       /$$
+         | $$__  $$                                  | $$      | $$
+         | $$  \ $$ /$$  /$$  /$$  /$$$$$$   /$$$$$$ | $$$$$$$ | $$
+         | $$$$$$$ | $$ | $$ | $$ /$$__  $$ |____  $$| $$__  $$| $$
+         | $$__  $$| $$ | $$ | $$| $$  \ $$  /$$$$$$$| $$  \ $$|__/
+         | $$  \ $$| $$ | $$ | $$| $$  | $$ /$$__  $$| $$  | $$    
+         | $$$$$$$/|  $$$$$/$$$$/|  $$$$$$/|  $$$$$$$| $$  | $$ /$$
+         |_______/  \_____/\___/  \______/  \_______/|__/  |__/|__/ -->
+    <nav id="desktop-nav">
+      <div class="logo"></div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Abhijit Profile Picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Abhijit S A</h1>
+        <p class="section__text__p2">I'm A Full-Stack Developer</p>
+
+        <div class="btn-container">
+          <button
+            class="btn btn-color-1"
+            onclick="location.href='https://drive.google.com/file/d/1MzlqjbnWka0lybZSF4JXodfTyfapo6ad/view?usp=sharing'"
+          >
+            Download Resumé
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/github-logo.png"
+            alt="Github Logo"
+            class="icon"
+            onclick="location.href='https://github.com/Abhijit-SA'"
+          />
+          <img
+            src="./assets/linkedin-logo.png"
+            alt="LinkedIn Logo"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/abhijit-acharii/'"
+          />
+          <img
+            src="./assets/mastodon-logo.png"
+            alt="Mastodon Logo"
+            class="icon"
+            onclick="location.href='https://infosec.exchange/@abhijit'"
+          />
+          <img
+            src="./assets/email-logo.png"
+            alt="Email Logo"
+            class="icon"
+            id="email"
+            onclick="copyText()"
+          />
+        </div>
+        <div id="socials-container">
+          <p id="emailHidden" class="hidden" onclick="copyText()">
+            abhijit.acharii@gmail.com
+          </p>
+        </div>
+      </div>
+    </section>
+    <script>
+      function copyText() {
+        /* Copy text into clipboard */
+        navigator.clipboard.writeText("abhijit.acharii@gmail.com");
+      }
+      const logo = document.getElementById("email");
+      const paragraph = document.getElementById("emailHidden");
+      logo.addEventListener("click", function () {
+        // Toggle the visibility of the paragraph
+        paragraph.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
