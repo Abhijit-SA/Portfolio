@@ -85,7 +85,11 @@ section {
 }
 
 .section__text__p2 {
-  font-size: 1.75rem;
+  font-size: 1.35rem;
+  margin-bottom: 0.25rem;
+}
+
+.section__text__p3 {
   margin-bottom: 1rem;
 }
 

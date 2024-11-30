@@ -20,8 +20,6 @@
       href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap"
       rel="stylesheet"
     />
-  </head>
-  <body>
     <!--  /$$$$$$$                                    /$$       /$$
          | $$__  $$                                  | $$      | $$
          | $$  \ $$ /$$  /$$  /$$  /$$$$$$   /$$$$$$ | $$$$$$$ | $$
@@ -30,6 +28,8 @@
          | $$  \ $$| $$ | $$ | $$| $$  | $$ /$$__  $$| $$  | $$    
          | $$$$$$$/|  $$$$$/$$$$/|  $$$$$$/|  $$$$$$$| $$  | $$ /$$
          |_______/  \_____/\___/  \______/  \_______/|__/  |__/|__/ -->
+  </head>
+  <body>
     <nav id="desktop-nav">
       <div class="logo"></div>
     </nav>
@@ -38,39 +38,46 @@
         <img src="./assets/profile-pic.png" alt="Abhijit Profile Picture" />
       </div>
       <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
+        <p class="section__text__p1">Hello there! I'm</p>
         <h1 class="title">Abhijit S A</h1>
-        <p class="section__text__p2">I'm A Full-Stack Developer</p>
+        <p class="section__text__p2">Software Developer</p>
+        <p class="section__text__p3">Bangalore, India</p>
 
         <div class="btn-container">
           <button
             class="btn btn-color-1"
             onclick="location.href='{{RESUME_URL}}'"
-          > <!--Updated on 27-Feb-24-->
+          >
             Download Resumé
           </button>
         </div>
         <div id="socials-container">
           <img
-            src="./assets/github-logo.png"
+            src="./assets/icons/github-logo.png"
             alt="Github Logo"
             class="icon"
             onclick="location.href='https://github.com/Abhijit-SA'"
           />
           <img
-            src="./assets/linkedin-logo.png"
-            alt="LinkedIn Logo"
+            src="./assets/icons/bluesky-logo.png"
+            alt="Bluesky Logo"
             class="icon"
-            onclick="location.href='https://www.linkedin.com/in/abhijit-achari/'"
+            onclick="location.href='https://bsky.app/profile/abhijit.one'"
           />
           <img
-            src="./assets/mastodon-logo.png"
+            src="./assets/icons/mastodon-logo.png"
             alt="Mastodon Logo"
             class="icon"
             onclick="location.href='https://infosec.exchange/@abhijit'"
           />
           <img
-            src="./assets/email-logo.png"
+            src="./assets/icons/linkedin-logo.png"
+            alt="LinkedIn Logo"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/abhijit-achari/'"
+          />
+          <img
+            src="./assets/icons/email-logo.png"
             alt="Email Logo"
             class="icon"
             id="email"
